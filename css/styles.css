@@ -1,0 +1,185 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --background-hero-color: #2f303a;
+  --our-team-back-color: #f5f4fa;
+  --footer-back-color: #000000;
+}
+
+body {
+  font-family: Roboto, serif;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+h2,
+h3 {
+  color: var(--title-text-color);
+  outline: 2px solid coral;
+}
+
+li {
+  list-style: none;
+  outline: 2px solid coral;
+}
+
+a {
+  text-decoration: none;
+  outline: 2px solid coral;
+}
+
+/* шапка */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid coral;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  outline: 2px solid coral;
+}
+
+.nav {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  outline: 2px solid coral;
+}
+
+/* главная навигация */
+
+.link {
+  color: var(--title-text-color);
+  outline: 2px solid coral;
+}
+
+.link:hover,
+.link:focus,
+.current,
+.web {
+  color: var(--accent-color);
+}
+
+.telephone-link {
+  color: inherit;
+  outline: 2px solid coral;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  outline: 2px solid coral;
+}
+
+/* герой */
+
+.hero {
+  text-align: center;
+
+  color: var(--background-color);
+  outline: 2px solid coral;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  outline: 2px solid coral;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+
+  color: var(--background-color);
+  background-color: var(--accent-color);
+
+  text-align: center;
+}
+
+/* особенности компании */
+
+.title-hidden {
+  margin: 0px;
+}
+
+.title-small-section {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.text-special-section,
+.text-address {
+  margin: 0px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* чем занимается компания */
+
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.text-team {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* портфолио */
+/* фильтр */
+
+.button-port {
+  color: var(--title-text-color);
+
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.button-port:hover,
+.button-port:focus {
+  color: var(--background-color);
+}
+
+/* список приложений */
+
+.title-app {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.text-app {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--primary-text-color);
+}
