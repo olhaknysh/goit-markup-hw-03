@@ -15,6 +15,8 @@ body {
   color: var(--primary-text-color);
 }
 
+/* утилиты */
+
 h2,
 h3 {
   color: var(--title-text-color);
@@ -22,7 +24,13 @@ h3 {
 }
 
 li {
+  outline: 2px solid coral;
+}
+
+.list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   outline: 2px solid coral;
 }
 
@@ -31,7 +39,17 @@ a {
   outline: 2px solid coral;
 }
 
-/* шапка */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* главная навигация */
 
 .container {
   margin-left: auto;
@@ -43,6 +61,28 @@ a {
   outline: 2px solid coral;
 }
 
+.flexbox-header {
+  display: flex;
+  padding: 25px;
+}
+
+.flexbox-header > .address {
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  outline: 2px solid coral;
+}
+
+.nav > .logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -50,14 +90,14 @@ a {
   outline: 2px solid coral;
 }
 
-.nav {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  outline: 2px solid coral;
+.list-flexbox {
+  display: flex;
+  align-items: center;
 }
 
-/* главная навигация */
+.list-flexbox > .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .link {
   color: var(--title-text-color);
@@ -71,14 +111,17 @@ a {
   color: var(--accent-color);
 }
 
-.telephone-link {
-  color: inherit;
-  outline: 2px solid coral;
+.address {
+  display: flex;
+  align-items: center;
 }
 
-.list {
-  margin: 0;
-  padding: 0;
+.address > .link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.telephone-link {
+  color: inherit;
   outline: 2px solid coral;
 }
 
@@ -89,6 +132,14 @@ a {
 
   color: var(--background-color);
   outline: 2px solid coral;
+}
+
+.hero-section {
+  max-width: 696px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -117,6 +168,19 @@ a {
 
 /* особенности компании */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.flexbox > .item-special:not(:last-child) {
+  margin-right: 30px;
+}
+
+.flexbox > .item-special {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
 .title-hidden {
   margin: 0px;
 }
@@ -130,20 +194,50 @@ a {
   line-height: 1.14;
 }
 
-.text-special-section,
+.special-section,
 .text-address {
-  margin: 0px;
-
   font-size: 14px;
   line-height: 1.71;
 }
 
+.text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 /* чем занимается компания */
 
+.section.no-padding {
+  padding-top: 0px;
+}
+
 .title-section {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+}
+
+.flexbox > .item-company:not(:last-child) {
+  margin-right: 30px;
+}
+
+.flexbox > .item-company {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+/* фото и ссылки на команду */
+
+.team-image {
+  margin-bottom: 30px;
+}
+
+.title-team {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .text-team {
@@ -151,24 +245,78 @@ a {
   line-height: 1.19;
 }
 
+/* футер */
+
+.title-footer {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 /* портфолио */
+
+.padding-portfolio {
+  padding-bottom: 94px;
+}
 /* фильтр */
 
+.flexbox-buttonport {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.flexbox-buttonport > .item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-port {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 128px;
+
   color: var(--title-text-color);
+  background-color: var(--our-team-back-color);
 
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
 }
 
 .button-port:hover,
 .button-port:focus {
   color: var(--background-color);
+  background-color: var(--accent-color);
 }
 
 /* список приложений */
 
+.flexbox-app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-app {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.item-app:not(:nth-of-type(3n)) {
+  margin-right: 30px;
+}
+
+.flexbox-app > .item-app:nth-of-type(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.text-container {
+  padding: 20px 24px;
+}
+
 .title-app {
+  margin-top: 0px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -178,6 +326,9 @@ a {
 }
 
 .text-app {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-size: 16px;
   line-height: 1.88;
 
