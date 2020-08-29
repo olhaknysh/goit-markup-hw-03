@@ -20,23 +20,16 @@ body {
 h2,
 h3 {
   color: var(--title-text-color);
-  outline: 2px solid coral;
-}
-
-li {
-  outline: 2px solid coral;
 }
 
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
-  outline: 2px solid coral;
 }
 
 a {
   text-decoration: none;
-  outline: 2px solid coral;
 }
 
 img {
@@ -57,8 +50,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid coral;
 }
 
 .flexbox-header {
@@ -76,7 +67,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  outline: 2px solid coral;
 }
 
 .nav > .logo {
@@ -87,7 +77,6 @@ img {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
-  outline: 2px solid coral;
 }
 
 .list-flexbox {
@@ -101,7 +90,6 @@ img {
 
 .link {
   color: var(--title-text-color);
-  outline: 2px solid coral;
 }
 
 .link:hover,
@@ -122,7 +110,6 @@ img {
 
 .telephone-link {
   color: inherit;
-  outline: 2px solid coral;
 }
 
 /* герой */
@@ -131,7 +118,6 @@ img {
   text-align: center;
 
   color: var(--background-color);
-  outline: 2px solid coral;
 }
 
 .hero-section {
@@ -150,7 +136,6 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  outline: 2px solid coral;
 }
 
 .button {
