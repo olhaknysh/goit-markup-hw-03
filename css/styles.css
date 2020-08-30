@@ -102,6 +102,8 @@ img {
 .address {
   display: flex;
   align-items: center;
+
+  font-style: normal;
 }
 
 .address > .link:not(:last-child) {
@@ -118,14 +120,15 @@ img {
   text-align: center;
 
   color: var(--background-color);
+  background-color: var(--background-hero-color);
 }
 
 .hero-section {
-  max-width: 696px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 696px;
 }
 
 .hero-title {
@@ -168,6 +171,7 @@ img {
 
 .title-hidden {
   margin: 0px;
+  display: none;
 }
 
 .title-small-section {
@@ -223,18 +227,37 @@ img {
 .title-team {
   margin-top: 0px;
   margin-bottom: 10px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .text-team {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 30px;
 }
 
 /* футер */
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--background-hero-color);
+}
+
 .title-footer {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  color: var(--background-color);
+}
+
+.footer .text-address {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* портфолио */
